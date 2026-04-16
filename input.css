@@ -14,3 +14,46 @@
     background-position: center;
   }
 }
+
+#humberger {
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  transition: all 0.25s;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+#humberger-top,
+#humberger-middle,
+#humberger-bottom {
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: all 0.5s;
+  transform: rotate(0);
+  /* pointer-events; */
+}
+
+#humberger-middle {
+  transform: translateY(7px);
+}
+
+#humberger-bottom {
+  transform: translateY(14px);
+}
+
+.open #humberger-top {
+  transform: rotate(45deg);
+}
+
+.open #humberger-middle {
+  display: none;
+}
+
+.open #humberger-bottom {
+  transform: rotate(-45deg);
+}

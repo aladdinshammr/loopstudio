@@ -2,44 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="/script.js" defer></script>
     <link rel="stylesheet" href="./output.css" />
     <title>LoopStudio</title>
   </head>
   <body>
     <!-- hero section start -->
     <section id="hero-section">
-      <div class="max-w-6xl px-6 py-12 text-white container mx-auto">
+      <div
+        class="max-w-6xl px-6 py-12 text-white container mx-auto"
+      >
         <!-- nav bar -->
-        <nav class="flex items-center justify-between">
+        <nav class="flex justify-between md:items-center">
           <img src="./images/logo.svg" alt="" />
           <ol class="font-alata space-x-6 md:flex hidden">
             <li class="group">
-              <a href="#" class="group-hover:border-b">About</a>
+              <a href="#" class="group-hover:border-b"
+                >About</a
+              >
             </li>
             <li class="group">
-              <a href="#" class="group-hover:border-b">Career</a>
+              <a href="#" class="group-hover:border-b"
+                >Career</a
+              >
             </li>
             <li class="group">
-              <a href="#" class="group-hover:border-b">Events</a>
+              <a href="#" class="group-hover:border-b"
+                >Events</a
+              >
             </li>
             <li class="group">
-              <a href="#" class="group-hover:border-b">Products</a>
+              <a href="#" class="group-hover:border-b"
+                >Products</a
+              >
             </li>
             <li class="group">
-              <a href="#" class="group-hover:border-b">Support</a>
+              <a href="#" class="group-hover:border-b"
+                >Support</a
+              >
             </li>
           </ol>
 
           <!-- humberger menu -->
+          <div class="md:hidden">
+            <button id="humberger" class="block z-40">
+              <div id="humberger-top"></div>
+              <div id="humberger-middle"></div>
+              <div id="humberger-bottom"></div>
+            </button>
+          </div>
         </nav>
         <!-- mobile menu -->
+        <ol
+          id="menu"
+          class="absolute top-0 left-0 right-0 min-h-screen bg-black uppercase px-12 py-32 text-lg hidden flex-col space-y-3"
+        >
+          <li class="group">
+            <a href="#" class="group-hover:text-pink-500"
+              >about</a
+            >
+          </li>
+          <li class="group">
+            <a href="#" class="group-hover:text-pink-500"
+              >Career</a
+            >
+          </li>
+          <li class="group">
+            <a href="#" class="group-hover:text-pink-500"
+              >events</a
+            >
+          </li>
+          <li class="group">
+            <a href="#" class="group-hover:text-pink-500"
+              >products</a
+            >
+          </li>
+          <li class="group">
+            <a href="#" class="group-hover:text-pink-500"
+              >support</a
+            >
+          </li>
+        </ol>
         <h2
           class="text-4xl max-w-lg md:text-6xl p-3 md:p-8 my-32 border-2 uppercase"
         >
@@ -52,19 +112,27 @@
       <div
         class="max-w-6xl px-6 my-32 space-y-10 md:px-0 md:flex-row md:space-y-0 relative container mx-auto flex flex-col"
       >
-        <img src="./images/desktop/image-interactive.jpg" alt="" class="" />
+        <img
+          src="./images/desktop/image-interactive.jpg"
+          alt=""
+          class=""
+        />
         <!-- contents container -->
         <div
           class="md:text-left bg-white md:absolute md:bottom-0 md:right-0 md:py-20 md:pl-20 md:top-48 text-center"
         >
-          <h2 class="text-4xl max-w-lg mb-6 md:text-5xl uppercase">
+          <h2
+            class="text-4xl max-w-lg mb-6 md:text-5xl uppercase"
+          >
             The leader in interactive VR
           </h2>
           <p class="max-w-lg">
-            Founded in 2011, Loopstudios has been producing world-class virtual
-            reality projects for some of the best companies around the globe.
-            Our award-winning creations have transformed businesses through
-            digital experiences that bind to their brand.
+            Founded in 2011, Loopstudios has been producing
+            world-class virtual reality projects for some of
+            the best companies around the globe. Our
+            award-winning creations have transformed
+            businesses through digital experiences that bind
+            to their brand.
           </p>
         </div>
       </div>
