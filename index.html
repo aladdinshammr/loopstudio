@@ -7,6 +7,12 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
     />
@@ -134,11 +140,13 @@
     <!-- creations section -->
     <section id="creation">
       <div
-        class="container max-w-6xl mx-auto px-6 py-12 my-32 md:px-0"
+        class="container max-w-6xl mx-auto px-6 py-12 my-24 md:px-0"
       >
         <!-- feature header -->
-        <div class="flex justify-between mb-20">
-          <h2>Our Creations</h2>
+        <div
+          class="flex md:justify-between mb-20 w-full justify-center items-center"
+        >
+          <h2 class="">Our Creations</h2>
           <button class="btn hidden md:block">
             see all
           </button>
@@ -272,8 +280,101 @@
             <div class="item-gradient"></div>
             <h3>Make It Fisheye</h3>
           </div>
+          <button class="btn md:hidden">see all</button>
         </div>
       </div>
     </section>
+
+    <footer id="footer-section" class="bg-black">
+      <div
+        class="container py-10 pb-20 px-2 grid w-full max-w-6xl mx-auto md:grid-rows-2 md:grid-flow-col justify-items-center gap-y-8 md:gap-y-4 md:justify-items-start md:justify-between"
+      >
+        <!-- item1 -->
+        <img
+          src="./images/logo.svg"
+          alt=""
+          class="scale-90"
+        />
+        <!-- menu -->
+        <ol
+          class="flex flex-col text-white space-y-6 md:space-y-0 md:space-x-6 md:flex-row"
+        >
+          <li class="group">
+            <a
+              href="#"
+              class="group-hover:border-b border-b-white font-bold"
+              >About</a
+            >
+          </li>
+          <li class="group">
+            <a
+              href="#"
+              class="group-hover:border-b border-b-white font-bold"
+              >Career</a
+            >
+          </li>
+          <li class="group">
+            <a
+              href="#"
+              class="group-hover:border-b border-b-white font-bold"
+              >Events</a
+            >
+          </li>
+          <li class="group">
+            <a
+              href="#"
+              class="group-hover:border-b border-b-white font-bold"
+              >Products</a
+            >
+          </li>
+          <li class="group">
+            <a
+              href="#"
+              class="group-hover:border-b border-b-white font-bold"
+              >Support</a
+            >
+          </li>
+        </ol>
+        <!-- icons -->
+        <ol class="flex space-x-4">
+          <li>
+            <a href="#"
+              ><img
+                src="./images/icon-facebook.svg"
+                alt=""
+                class="ficon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./images/icon-twitter.svg"
+                alt=""
+                class="ficon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./images/icon-pinterest.svg"
+                alt=""
+                class="ficon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./images/icon-instagram.svg"
+                alt=""
+                class="ficon"
+            /></a>
+          </li>
+        </ol>
+        <!-- copyright -->
+        <p class="text-gray-400">
+          &copy; 2026 Loopstudios. All Rights Reserved
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
